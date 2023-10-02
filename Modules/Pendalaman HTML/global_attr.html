@@ -1,0 +1,120 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Variables</title>
+    <style>
+      body {
+        color: white;
+        padding: 2vw 10vw;
+        background: grey;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      body > h1 {
+        font-size: 3em;
+        text-align: center;
+      }
+      body > ul {
+        font-size: 1.5em;
+      }
+      .hoverable:hover {
+        background: slategray;
+        cursor: pointer;
+      }
+      .experiments {
+        display: flex;
+        flex-direction: column;
+      }
+      .experiments > div {
+        margin-bottom: 20px;
+      }
+      .card {
+        color: black;
+        border-radius: 5px;
+        background: aliceblue;
+        box-shadow: 1px 3px 10px -5px black;
+      }
+      .drop_point {
+        box-sizing: border-box;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .drop_point h2 {
+        margin-bottom: 10px;
+      }
+      .drop_point p {
+        margin: 0;
+      }
+      .container.center {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+      .dir {
+        box-sizing: border-box;
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    </style>
+    <script>
+      function showDetails(test) {
+        let testType = test.getAttribute("data-test-3");
+        alert(testType);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Global Variable Test</h1>
+    <ul>
+      <li draggable="true">test-1 draggable</li>
+      <li contenteditable="true">test-2 contenteditable</li>
+      <li
+        class="hoverable"
+        data-test-3="Hello im a data atribute of test 3"
+        id="test-3"
+        onclick="showDetails(this)"
+      >
+        test-3 data-*
+      </li>
+      <li hiddens>this element is hidden</li>
+      <li>
+        test-5
+        <span lang="id">lang adalah atribut untuk mendefinisikan bahasa</span>
+      </li>
+      <li>test-6 translate is not supported on popular browsers</li>
+      <li title="Hi im the title of this element">
+        test-7 hover over this text to see the value of title attribute
+      </li>
+      <li accesskey="c" contenteditable="true">
+        test-7 access key can make you focus on an element when you press a
+        button (chrome:alt + c)
+      </li>
+    </ul>
+    <div class="experiments">
+      <div class="container center">
+        <div class="dir card">
+          <h2>Dir Experiment</h2>
+          <p dir="ltr">this text is writen left to right</p>
+          <p dir="rtl">this text is writen right to left</p>
+        </div>
+      </div>
+      <div class="container center">
+        <div class="drop_point card" dropzone="move">
+          <h2>Drop Point Experiment</h2>
+          <p>Not supported on popular browsers aparently</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+body {
+  padding: 8vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: gray;
+  color: white;
+}
+h1.title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 4vh;
+}
+a{
+    color: lightblue;
+}
+mark{
+  background: darkslategray;
+  color: white;
+}
+.card {
+  color: black;
+  border-radius: 5px;
+  background: aliceblue;
+  box-shadow: 1px 3px 10px -5px black;
+}
+.hoverable:hover {
+  background: slategray;
+  cursor: pointer;
+}
+.iso_card {
+  border-radius: 5px;
+  background: white;
+  color: black;
+  box-shadow: 3px -2px 1px 2px black;
+}

@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Button</title>
+    <style>
+      div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .pushable {
+        background: hsl(340deg 100% 32%);
+        border-radius: 12px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline-offset: 8px;
+      }
+      .front {
+        display: block;
+        padding: 12px 42px;
+        border-radius: 12px;
+        font-size: 1.25rem;
+        background: hsl(345deg 100% 47%);
+        color: white;
+        transform: translateY(-4px);
+      }
+      .front {
+        will-change: transform;
+        transition: transform 250ms;
+      }
+      .pushable:hover .front {
+        transform: translateY(-10px);
+      }
+      .pushable:active .front {
+        transform: translateY(-6px);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button class="pushable">
+        <span class="front">Push Me</span>
+      </button>
+    </div>
+  </body>
+</html>

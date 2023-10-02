@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atribute Selector</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      a[href^="#"] {
+        color: rebeccapurple;
+      }
+      a[href*="example"] {
+        color: gold;
+      }
+      a[href*="insensitive" i] {
+        color: aqua;
+      }
+      a[href$=".org"] {
+        color: crimson;
+      }
+      a[href~="#"] {
+        background-color: white;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Atribute Selector</h1>
+    <ul>
+      <li><a href="#internal">Internal link</a></li>
+      <li><a href="http://example.com">Example link</a></li>
+      <li><a href="#InSensitive">Insensitive internal link</a></li>
+      <li><a href="http://example.org">Example org link</a></li>
+    </ul>
+  </body>
+</html>
