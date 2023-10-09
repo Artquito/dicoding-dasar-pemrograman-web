@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Test1.css">
+</head>
+
+<body>
+    <div class="container top-box">
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        <div class="box yellow"></div>
+    </div>
+    <h1 class="title">FLEXBOX</h1>
+    <nav>
+        <li>
+            <a href="#flex-grow">Flex Grow</a>
+            <a href="#flex-base">Flex Grow</a>
+            <a href="#align-self">Flex Grow</a> 
+        </li>
+    </nav>
+    <h3 id="#flex-grow">Flex Grow</h3>
+    <p>Grows your flex item into the settings that you set</p>
+    <div class="container flex-center default-gap">
+        <div class="box red grow-1 shrink-1"></div>
+        <div class="box blue grow-2"></div>
+        <div class="box yellow grow-3"></div>
+    </div>
+    <h3 id="#flex-base">Flex Base</h3>
+    <p>Determines the default size of a <strong>flex item</strong> before flex grow or flex shrink effects it</p>
+    <div class="container flex-center default-gap">
+        <div class="box red base-flex-big"></div>
+        <div class="box blue base-flex-medium"></div>
+        <div class="box yellow base-flex-small"></div>
+    </div>
+
+    <h3 id="#align-self">align-self</h3>
+    <p>Determines the alignment of a <strong>flex item</strong>
+    <div class="container flex-center default-gap" style="height: 10rem;">
+        <div class="box red base-flex-big align-self"></div>
+        <div class="box blue base-flex-medium"></div>
+        <div class="box yellow base-flex-small"></div>
+    </div>
+</body>
+
+</html>
